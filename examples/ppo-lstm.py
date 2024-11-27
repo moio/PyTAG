@@ -6,6 +6,7 @@ import time
 from distutils.util import strtobool
 
 import gymnasium as gym
+from pytag.gym_wrapper.envs import TagSingleplayerGym
 import numpy as np
 import torch
 import torch.nn as nn
@@ -13,7 +14,7 @@ import torch.optim as optim
 
 from torch.utils.tensorboard import SummaryWriter
 
-from utils.wrappers import MergeActionMaskWrapper, RecordEpisodeStatistics
+from pytag.utils.wrappers import MergeActionMaskWrapper, RecordEpisodeStatistics
 from pytag.utils.common import make_env
 from utils.networks import PPOLSTM
 

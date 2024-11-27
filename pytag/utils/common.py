@@ -6,7 +6,7 @@ import torch
 
 import jpype
 import jpype.imports
-from utils.wrappers import StrategoWrapper, SushiGoWrapper
+from pytag.utils.wrappers import StrategoWrapper, SushiGoWrapper
 
 
 def make_env(env_id, seed, opponent, n_players, framestack=1, obs_type="vector"):
