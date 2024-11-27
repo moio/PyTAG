@@ -26,5 +26,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/tag:${{ github.ref_name }}
-            ghcr.io/${{ github.repository_owner }}/tag:latest
+            ghcr.io/${{ github.repository_owner }}/pytag:${{ github.ref_name }}
+            ghcr.io/${{ github.repository_owner }}/pytag:latest
